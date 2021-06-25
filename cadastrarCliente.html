@@ -42,7 +42,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="indexVendedor.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Início</span></a>
@@ -56,7 +56,23 @@
                 Interface
             </div>
 
-             <!-- Nav Item - Pages Collapse Menu -->
+              <!-- Nav Item - Menu de clientes -->
+              <li class="nav-item active">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes"
+                    aria-expanded="true" aria-controls="collapseClientes">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Clientes</span>
+                </a>
+                <div id="collapseClientes" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Gerenciar Clietes:</h6>
+                        <a class="collapse-item" href="cadastrarCliente.html">Novo Cliente</a>
+                        <a class="collapse-item" href="404.html">Buscar Cliente</a>                       
+                    </div>
+                </div>
+            </li>
+
+             <!-- Nav Item - Menu de Reservas-->
              <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReservas"
                     aria-expanded="true" aria-controls="collapseReservas">
@@ -66,7 +82,8 @@
                 <div id="collapseReservas" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Gerenciar Reservas:</h6>
-                        <a class="collapse-item" href="404.html">Nova Reserva</a>
+                        <a class="collapse-item" href="passeiosPrincipal.html">Nova Reserva</a>
+                        <a class="collapse-item" href="404.html">Consultar Reserva</a>
                         <a class="collapse-item" href="404.html">Pendentes</a>
                         <a class="collapse-item" href="404.html">Confirmaas</a>
                         <a class="collapse-item" href="404.html">Canceladas</a>
@@ -74,25 +91,9 @@
                 </div>
             </li>
 
-             <!-- Nav Item - Pages Collapse Menu -->
-             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClientes"
-                    aria-expanded="true" aria-controls="collapseClientes">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Clientes</span>
-                </a>
-                <div id="collapseClientes" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Gerenciar Clietes:</h6>
-                        <a class="collapse-item" href="404.html">Novo Cliente</a>
-                        <a class="collapse-item" href="404.html">Buscar Cliente</a>                       
-                    </div>
-                </div>
-            </li>
-
              <!-- Nav Item - Passeios -->
              <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="passeiosPrincipal.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Passeios</span></a>
             </li>
@@ -330,55 +331,53 @@
                             <form class="user">
                                 
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                    <input type="text" class="form-control form-control-user" id="nomeCompletoCliente"
                                             placeholder="Nome Completo">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" id="hotelCliente"
                                         placeholder="Hotel">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" id="quartoCliente"
                                         placeholder="Quarto">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" id="pontoDeEncontro"
                                         placeholder="Ponto de Encontro (Endereço)">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" id="contatoCliente"
                                         placeholder="Contato (WhatsApp)">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Adultos (ADT):">
+                                    <input type="email" class="form-control form-control-user" id="qtdADTCliente"
+                                        placeholder="Adultos (ADT)">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Crianças (CHD):">
+                                    <input type="email" class="form-control form-control-user" id="qtdCHDCliente"
+                                        placeholder="Crianças (CHD)">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="FREE:">
+                                    <input type="email" class="form-control form-control-user" id="qtdFREECliente"
+                                        placeholder="FREE">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" id="emailCliente"
                                         placeholder="Email (opcional)">
                                 </div>
+                            </form>
                             
-                                <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                    Cadastrar
-                                </a> 
-                                <a href="index.html" class="btn btn-primary btn-user btn-block">
-                                    Iniciar Reserva
-                                </a>                            
-                            </form>    
-						</div>
+                            <div class="form-group" >
+                                <a href="#" class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#confirmacaoModal">
+                                    <span class="icon text-white-50">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    <span class="text">Salvar</span>
+                                </a>
+                            </div>   
+                        </div>
                     </div>
-
-             
-
-
                 </div>
                 <!-- /.container-fluid -->
 
@@ -419,12 +418,12 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Deseja Sair?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Selecione "Logout" para encerrar sua Sessão.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="index.html">Logout</a>
@@ -432,6 +431,59 @@
             </div>
         </div>
     </div>
+
+     <!-- Logout Modal-->
+     <div class="modal fade" id="confirmacaoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Confirmar Cadastro?</h5>
+                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                 </button>
+             </div>
+           
+
+             <div class="modal-body">
+                <p> <b>Cliente: </b> Rafael Martins Ganzer </p>
+                <p> <b>Hotel: </b>  Natal Beach - Quarto:  41</p>                
+                <p> <b>ADT: </b> 2 </p>               
+                <p> <b>CHD: </b>  1 </p>
+                <p> <b>FREE: </b> 0 </p>
+                <p> <b>Embarque: </b> Confort Suítes Natal </p>
+              </div>
+            
+            
+
+             <div class="modal-footer">
+                <!-- button class="btn btn-secondary" type="button" data-dismiss="modal">Não</button -->               
+                 
+                <a href="#" class="btn btn-danger btn-icon-split" data-dismiss="modal">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-trash"></i>
+                    </span>
+                    <span class="text">Descartar</span>
+                </a>
+
+                <a href="#" class="btn btn-success btn-icon-split" data-toggle="modal" data-dismiss="modal">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <span class="text">Salvar</span>
+                </a>
+
+                <a href="passeiosPrincipal.html" class="btn btn-secondary btn-icon-split">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                    <span class="text">Iniciar Reserva</span>
+                </a>                 
+                
+             </div>
+         </div>
+     </div>
+ </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -451,7 +503,7 @@
     <script src="js/demo/chart-pie-demo.js"></script>
 
     <!-- Custom scripts for this pages-->
-    <script src="js/index.js"></script>
+    <script src="js/cadatrarCliente.js"></script>
 
 </body>
 

@@ -42,7 +42,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="indexVendedor.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Início</span></a>
@@ -91,10 +91,8 @@
                 </div>
             </li>
 
-           
-
              <!-- Nav Item - Passeios -->
-             <li class="nav-item">
+             <li class="nav-item active">
                 <a class="nav-link" href="passeiosPrincipal.html">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Passeios</span></a>
@@ -318,267 +316,227 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Painel Vendedor</h1>
-                        <a onclick="gerarPDF()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Gerar PDF</a>
+                        <h1 class="h3 mb-0 text-gray-800">Selecionar Pesseio</h1>                       
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
+                     <!-- Divider -->
+                    <hr class="sidebar-divider col-md-12">
 
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Vendas (Mês)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 30.000,00</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Comissões Recebidas (Mês)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 3.000,00</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Comissões Pendentes</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 300,00</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Metas
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">75%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Atividades Pendentes</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">8</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Row -->
-
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Gráfico de Comissões</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Período:</div>
-                                            <a class="dropdown-item" href="#">7 Dias</a>
-                                            <a class="dropdown-item" href="#">30 Dias</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Gráfico de Vendas</a>                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Passeios</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Período:</div>
-                                            <a class="dropdown-item" href="#">Hoje</a>
-                                            <a class="dropdown-item" href="#">7 Dias</a>
-                                            <a class="dropdown-item" href="#">30 Dias</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4 pb-2">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <div class="mt-4 text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> Passeio 1
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Passeio 2
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Passeio 3
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
-
-                            <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Metas</h6>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="small font-weight-bold">Passeio 1<span
-                                            class="float-right">20%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Passeio 2 <span
-                                            class="float-right">40%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
-                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Passeio 3 <span
-                                            class="float-right">60%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Passeio 4<span
-                                            class="float-right">80%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Pipa <span
-                                            class="float-right">Complete!</span></h4>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
-                                <!-- Illustrations -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Mensagem da Gerência</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
-                                            src="img/undraw_posting_photo.svg" alt="...">
-                                    </div>
-                                    <p>Nossa Plataforma é Completamente responsiva, portanto pode funcionar em qualque rdispositivo SMART</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
+                    
+                    <div class="col-md-12">
 
                         
+                        <div class="col-md-6">
+                            
+                            <div class="d-sm-flex  justify-content-between mb-4 ">
+                                <p class=" mb-1 text-gray-800">Período</p>
+                                <input type="date" id="bday" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" class=" btn btn-secondary " > 
+                                <p class=" mb-0 text-gray-800">até</p>
+                                <input type="date" id="bday" name="diaa" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" class=" btn btn-secondary " > 
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-sm-flex  justify-content-between mb-4 ">
+                                <p class=" mb-0 text-gray-800">Passeio    </p>                    
+                                
+                                <!-- div class="dropdown mb-4">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Selecionar Passeio
+                                    </button>
+                                    <div class="dropdown-menu "
+                                        aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Pipa</a>
+                                        <a class="dropdown-item" href="#">4 x 4</a>
+                                        <a class="dropdown-item" href="#">...</a>
+                                        <a class="dropdown-item" href="#">Todos disponiveis para o pepiodo</a>
+                                    </div>
+                                </div -->
+
+                                <div >
+                                    <select class="form-select  btn  btn-secondary" >
+                                        <option selected>Selecione o Roteiro</option>
+                                        <option value="1">Pipa</option>
+                                        <option value="2">4 X 4</option>
+                                        <option value="2">...... </option>
+                                        <option value="3">Todos</option>
+                                        <option value="3">Todos os Disponívies</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-sm-flex  justify-content-between mb-4 ">
+                                <p class=" mb-0 text-gray-800">PAX    </p>                                                  
+                                <div >
+                                    <select class="form-select  btn  btn-secondary" >
+                                        <option selected>Quantidade Vagas</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="2">3</option>
+                                        <option value="3">4</option>
+                                        <option value="3">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-10 text-right">
+                            <a onclick="limpar('gridPasseios')" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
+                                class="fas fa-trash fa-sm text-white-50"></i>Limpar </a>                          
+                            <a onclick="pesquisar('gridPasseios')" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i
+                                class="fas fa-search fa-sm text-white-50"></i>Pesquisar </a>
+                        </div>
 
                         
                     </div>
 
+                      <!-- Divider -->
+                      <hr class="sidebar-divider">
+
+                    <!-- Content Row -->
+                    <div class="row">
+						<div id="gridPasseios"  class="col-md-10" style="display:none;">
+
+
+                            <section class="pt-5 pb-5">
+                                <div class="container">
+                                  <div class="row">
+                                      <div class="col-6">
+                                          <h3 class="mb-3">Roteiros disponíveis </h3>
+                                      </div>
+                                      <div class="col-6 text-right">
+                                          <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                              <i class="fa fa-arrow-left"></i>
+                                          </a>
+                                          <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                              <i class="fa fa-arrow-right"></i>
+                                          </a>
+                                      </div>
+                                      <div class="col-12">
+                                          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                              
+                                              <div class="carousel-inner">
+                                                  <div class="carousel-item active">
+                                                      <div class="row">
+                              
+                                                          <div class="col-md-6 mb-3">
+                                                              <div class="card">
+                                                                  <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                                  <div class="card-body">
+                                                                      <h4 class="card-title">Pipa</h4>                                                                      
+                                                                      <h5 class="card-text text-primary ">INFORMAÇÕES GERAIS </h5>
+                                                                      <p class="card-text text-black"> - Horário: 08 às 18hs em média (saída e retorno ao hotel);  </p>
+                                                                      <p class="card-text text-black">- Saídas: Diárias </p>
+                                                                      <p class="card-text text-black">- Local de saída: Deixamos e buscamos nos hotéis em Ponta Negra, Via costeira e Praia do Meio </p>
+                                                                  </div>
+                              
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-md-6 mb-3">
+                                                              <div class="card">
+                                                                  <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                                                  <div class="card-body">
+                                                                      <h4 class="card-title">4 x 4</h4>
+                                                                      <p class="card-text text-primary ">INFORMAÇÕES GERAIS </p>
+                                                                      <p class="card-text text-black"> - Horário: 08 às 18hs em média (saída e retorno ao hotel);  </p>
+                                                                      <p class="card-text text-black">- Saídas: Diárias </p>
+                                                                      <p class="card-text text-black">- Local de saída: Deixamos e buscamos nos hotéis em Ponta Negra, Via costeira e Praia do Meio </p>
+                              
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          
+                                                         
+                              
+                                                      </div>
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                      <div class="row">
+                              
+                                                          <div class="col-md-4 mb-3">
+                                                              <div class="card">
+                                                                  <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                                                  <div class="card-body">
+                                                                      <h4 class="card-title">Quadriciclo </h4>
+                                                                      <h5 class="card-text text-primary ">INFORMAÇÕES GERAIS </h5>
+                                                                      <p class="card-text text-black"> - Horário: 08 às 18hs em média (saída e retorno ao hotel);  </p>
+                                                                      <p class="card-text text-black">- Saídas: Diárias </p>
+                                                                      <p class="card-text text-black">- Local de saída: Deixamos e buscamos nos hotéis em Ponta Negra, Via costeira e Praia do Meio </p>
+                              
+                                                                  </div>
+                              
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-md-4 mb-3">
+                                                              <div class="card">
+                                                                  <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                                                  <div class="card-body">
+                                                                      <h4 class="card-title">Maracajaú</h4>
+                                                                      <h5 class="card-text text-primary ">INFORMAÇÕES GERAIS </h5>
+                                                                      <p class="card-text text-black"> - Horário: 08 às 18hs em média (saída e retorno ao hotel);  </p>
+                                                                      <p class="card-text text-black">- Saídas: Diárias </p>
+                                                                      <p class="card-text text-black">- Local de saída: Deixamos e buscamos nos hotéis em Ponta Negra, Via costeira e Praia do Meio </p>
+                              
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col-md-4 mb-3">
+                                                              <div class="card">
+                                                                  <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                                                  <div class="card-body">
+                                                                      <h4 class="card-title">São Miguel do Gostoso</h4>
+                                                                      <h5 class="card-text text-primary ">INFORMAÇÕES GERAIS </h5>
+                                                                      <p class="card-text text-black"> - Horário: 08 às 18hs em média (saída e retorno ao hotel);  </p>
+                                                                      <p class="card-text text-black">- Saídas: Diárias </p>
+                                                                      <p class="card-text text-black">- Local de saída: Deixamos e buscamos nos hotéis em Ponta Negra, Via costeira e Praia do Meio </p>
+                              
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                              
+                                                      </div>
+                                                  </div>
+                                                  <div class="carousel-item">
+                                                      <div class="row">
+                              
+                                                          <div class="col-md-12 mb-3">
+                                                              <div class="card">
+                                                                  <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                                                  <div class="card-body">
+                                                                      <h4 class="card-title">Perobas + Punaú</h4>
+                                                                      <h5 class="card-text text-primary ">INFORMAÇÕES GERAIS </h5>
+                                                                      <p class="card-text text-black"> - Horário: 08 às 18hs em média (saída e retorno ao hotel);  </p>
+                                                                      <p class="card-text text-black">- Saídas: Diárias </p>
+                                                                      <p class="card-text text-black">- Local de saída: Deixamos e buscamos nos hotéis em Ponta Negra, Via costeira e Praia do Meio </p>
+                              
+                                                                  </div>
+                              
+                                                              </div>
+                                                          </div>                                                         
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </section> 
+                        </div>
+                    </div>
                 </div>
                 <!-- /.container-fluid -->
+
+                
+
+                 
+              
+                <!-- /.container-fluid -->
+             
 
             </div>
             <!-- End of Main Content -->
@@ -604,7 +562,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -625,6 +582,59 @@
         </div>
     </div>
 
+     <!-- Logout Modal-->
+     <div class="modal fade" id="confirmacaoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Confirmar Cadastro?</h5>
+                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                 </button>
+             </div>
+           
+
+             <div class="modal-body">
+                <p> <b>Cliente: </b> Rafael Martins Ganzer </p>
+                <p> <b>Hotel: </b>  Natal Beach - Quarto:  41</p>                
+                <p> <b>ADT: </b> 2 </p>               
+                <p> <b>CHD: </b>  1 </p>
+                <p> <b>FREE: </b> 0 </p>
+                <p> <b>Embarque: </b> Confort Suítes Natal </p>
+              </div>
+            
+            
+
+             <div class="modal-footer">
+                <!-- button class="btn btn-secondary" type="button" data-dismiss="modal">Não</button -->               
+                 
+                <a href="#" class="btn btn-danger btn-icon-split" data-dismiss="modal">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-trash"></i>
+                    </span>
+                    <span class="text">Descartar</span>
+                </a>
+
+                <a href="#" class="btn btn-success btn-icon-split" data-toggle="modal" data-dismiss="modal">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    <span class="text">Salvar</span>
+                </a>
+
+                <a href="404.html" class="btn btn-secondary btn-icon-split" ">
+                    <span class="icon text-white-50">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                    <span class="text">Iniciar Reserva</span>
+                </a>                 
+                
+             </div>
+         </div>
+     </div>
+ </div>
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -643,7 +653,17 @@
     <script src="js/demo/chart-pie-demo.js"></script>
 
     <!-- Custom scripts for this pages-->
-    <script src="js/index.js"></script>
+    <script src="js/passeios.js"></script>
+
+   
+
+        
+
+<script>
+    
+
+    includeHTML();
+    </script>
 
 </body>
 
